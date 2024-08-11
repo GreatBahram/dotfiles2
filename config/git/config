@@ -20,3 +20,6 @@
         added = yellow
         changed = green
         untracked = cyan
+
+[alias]
+    git = !git
