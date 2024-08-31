@@ -22,29 +22,29 @@
         untracked = cyan
 
 [alias]
-    git = !git
+        git = !git
 	alias-master-as-main = !git symbolic-ref refs/heads/main refs/heads/master && git symbolic-ref refs/remotes/origin/main refs/remotes/origin/master && git switch main
 
 [pager]
 	status = true
 
 [core]
-    pager = delta
+        pager = delta
 
 [delta]
-    # https://dandavison.github.io/delta/configuration.html
-    hyperlinks = true
-    line-numbers = true
-    navigate = true
-    syntax-theme = Monokai Extended
+        # https://dandavison.github.io/delta/configuration.html
+        hyperlinks = true
+        line-numbers = true
+        navigate = true
+        syntax-theme = Monokai Extended
 
 [diff]
-    colorMoved = default
+        colorMoved = default
 
 [interactive]
-    diffFilter = delta --color-only
+        diffFilter = delta --color-only
 
 [merge]
-    conflictStyle = zdiff3
+        conflictStyle = zdiff3
 [init]
 	defaultBranch = main
