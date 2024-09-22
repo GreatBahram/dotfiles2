@@ -24,6 +24,8 @@
 [alias]
         git = !git
 	alias-master-as-main = !git symbolic-ref refs/heads/main refs/heads/master && git symbolic-ref refs/remotes/origin/main refs/remotes/origin/master && git switch main
+        switch-recent = !git branch --sort=-committerdate --format='%(refname:short)' | fzf --preview 'git log --date relative --color main..{}'  | xargs git switch
+
 
 [pager]
 	status = true
